@@ -1,0 +1,13 @@
+<!-- Everything has to be wrapped up in a division -->
+<!-- Division also calls method -->
+<div [ngClass]="setClasses()">
+  <p>
+    <!-- Creates checkbox -->
+    <!-- Adds event to the checbox -->
+    <input (change)="onToggle(todo)" type="checkbox" />
+    {{todo.title}}
+    <!-- Creates button -->
+    <!-- Adds event to the button when being clicked -->
+    <button (click)="onDelete(todo)" class="del">x</button>
+  </p>
+</div>

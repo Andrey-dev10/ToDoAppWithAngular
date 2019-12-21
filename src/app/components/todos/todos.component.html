@@ -1,0 +1,13 @@
+
+<!-- brings button -->
+<app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+
+<!-- Adds todos.components.ts to our template-->
+<!-- used todo-item component -->
+<app-todo-item
+
+  *ngFor="let todo of todos"
+  [todo]="todo"
+  (deleteTodo)="deleteTodo($event)"
+  >
+</app-todo-item>

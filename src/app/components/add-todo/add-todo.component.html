@@ -1,0 +1,9 @@
+<!-- Creates form -->
+<!-- Adds event for submit -->
+<form class="form" (ngSubmit)="onSubmit()">
+  <!-- creates input for user -->
+  <!-- binds to title input -->
+  <input type="text" name="title" [(ngModel)]="title"
+  placeholder="Add Todo..">
+  <input type="submit" value="submit" class="btn">
+</form>
